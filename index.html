@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+
+
+    <style>
+        .grid-container {
+            display: grid;
+            background-color: palevioletred;
+            grid-template-columns: auto auto auto;
+        }
+
+        .grid-container div {
+            text-align: center;
+            color: powderblue;
+            font-size: xx-large;
+            border: 1px solid black;
+        }
+
+        .grid-container-porcentaje {
+            display: grid;
+            background-color: palegreen;
+            grid-template-columns: 30% auto 10%;
+        }
+
+        .grid-container-porcentaje div {
+            text-align: center;
+            color: black;
+            font-size: xx-large;
+            border: 1px solid black;
+        }
+
+        .grid-container-por-pixel {
+            display: grid;
+            background-color: paleturquoise;
+            grid-template-columns: 200px 1fr 100px;
+        }
+
+        .grid-container-por-pixel div {
+            text-align: center;
+            color: black;
+            font-size: xx-large;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h2> grid-template : auto auto auto</h2>
+    <div class="grid-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+
+    <h2> grid-template : 30% auto 10%</h2>
+    <div class="grid-container-porcentaje">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+
+    <h2> grid-template : 200px 1fr 100px</h2>
+    <div class="grid-container-por-pixel">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+
+
+</body>
+
+</html>
